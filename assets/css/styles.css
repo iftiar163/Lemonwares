@@ -1,0 +1,522 @@
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Global CSS */
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+p {
+	font-size: 16px;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+
+/* Header Section */
+
+header {
+	padding: 10px 0;
+}
+
+.nav-link {
+	margin: 0 12px;
+  font-weight: 600;
+  color: #000;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-hover {
+	position: relative;
+}
+
+.nav-hover::after {
+	content: "";
+	position: absolute;
+	width: 0%;
+	left: 50%;
+	bottom: 0;
+	height: 2px;
+	background: #B00000;
+	transition: all 0.3s ease-in-out;
+}
+
+.nav-hover:hover::after {
+	width: 100%;
+	left: 0;
+}
+
+.nav-hover:hover{
+	color: #B00000;
+}
+
+.login {
+	color: #B00000;
+}
+
+/* Banner Section */
+
+.banner-section {
+	padding: 50px 0;
+}
+
+.button-control ul li {
+	display: inline-block;
+  margin: 0 20px;
+  padding-bottom: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #D6D4D4;
+}
+
+.button-control ul .active {
+	color: #B00000;
+	border-bottom: 2px solid #B00000;
+}
+
+.banner-content h2 {
+	font-size: 64px;
+  font-weight: 500;
+  margin: 10px 0 23px;
+}
+
+.banner-content h2 span {
+	color: #B00000;
+}
+
+.banner-content p {
+	padding-right: 50px;
+  margin: 50px 0;
+  font-weight: 500;
+}
+
+.btn-banner-one {
+	padding: 12px 20px;
+	margin: 20px 24px 0 0;
+  border: none;
+  border-radius: 10px;
+  background: #B00000;
+  color: #fff;
+}
+
+.btn-banner-two {
+	padding: 12px 20px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  background: #fff;
+  color: #000;
+  font-weight: 500;
+}
+
+/* Hosting Name Section */
+
+.hosting-section {
+	padding: 50px 0;
+}
+
+.hosting-head h2 {
+	font-size: 45px;
+	font-weight: 500;
+}
+
+.hosting-head p {
+	margin: 30px 0 0;
+  font-weight: 500;
+}
+
+.row-margin1 {
+	margin-top: 12px;
+}
+
+.row-margin {
+	margin-top: 66px;
+}
+
+/* Service Section */
+
+.service-section {
+	padding: 50px 0;
+}
+
+.service-row {
+	margin-top: ;
+}
+
+
+.service-content h3 {
+	font-size: 20px;
+  margin: 16px 0;
+  font-weight: 500;
+}
+
+.service-content p {
+	font-weight: 500;
+}
+
+/* Package Section */
+
+.package-section {
+	padding: 50px 0;
+}
+
+.package-head h2 {
+	padding: 0 200px;
+	font-size: 50px;
+  font-weight: 600;
+}
+
+.package-head p {
+	margin: 24px 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.input-list ul li {
+	display: inline-block;
+  margin: 15px 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #B00000;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider::before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round::before {
+  border-radius: 50%;
+}
+
+.package-menu ul li {
+	display: inline-block;
+  margin: 5px 10% 0;
+  font-size: 30px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.package-menu ul .active {
+	color: #B00000;
+	border-bottom: 2px solid #B00000;
+}
+
+.pakcage-items {
+	padding: 32px;
+	margin-top: 45px;
+	border: 1px solid #eee;
+	border-radius: 15px;
+}
+
+.pakcage-items h3 {
+	font-size: 24px;
+  font-weight: 500;
+}
+
+.pakcage-items h2 {
+	font-size: 34px;
+  font-weight: 500;
+}
+.pakcage-items p {
+	margin: 18px 0;
+}
+.pakcage-items .p1 {
+	margin: 0;
+}
+
+.btn-package {
+	padding: 8px 26%;
+	margin: 30px 0;
+  border: 1px solid #C4C4C4;
+  border-radius: 10px;
+  background: transparent;
+  color: #000;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-package:hover {
+	background: #B00000;
+	color: #fff;
+}
+
+.pakcage-items ul li {
+	padding: 0 0 14px;
+
+}
+
+.pakcage-items .fa-check {
+	width: 12%;
+}
+
+/* Client Review */
+
+.client-review {
+	padding: 50px 0;
+}
+
+.review-head h2 {
+	font-size: 48px;
+  font-weight: 500;
+}
+
+.review-head h2 span {
+	display: block;
+	font-size: 40px;
+	color: #B00000;
+}
+
+.review-head p {
+	font-weight: 500;
+}
+
+.review-content {
+	padding: 20px;
+  border: 1px solid #969BAB;
+  border-radius: 15px;
+}
+
+.review-margin {
+	margin-top: 40px;
+}
+
+.review-content img {
+	height: 118px;
+  width: 110px!important;
+}
+
+.review-content p {
+	font-weight: 500;
+  padding-right: 70px;
+}
+
+.review-content h4 {
+	margin: 44px 0 0;
+	font-size: 20px;
+}
+
+.review-content .para-title {
+	color: #969BAB;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #b00000;
+}
+
+/* Contact Us */
+
+.contact-section {
+	padding: 50px 0;
+	background: url(../images/contact-bg.png) no-repeat center top;
+	background-size: cover;
+}
+
+.contact-head h2 {
+	font-size: 48px;
+  padding: 0 50px;
+}
+
+.form-control {
+	width: 50%;
+  margin: 0 auto;
+  color: #000;
+  padding: 12px 6px;
+}
+
+.form-control:focus{
+	box-shadow: none;
+	border: 1px solid #b00000;
+}
+
+.btn-submit {
+	margin: 0 auto;
+  display: block;
+  padding: 8px 40px;
+  background: #b00000;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-submit:hover {
+	background: #f10c0c;
+}
+
+
+/* Footer Section */
+
+footer {
+	padding: 50px 0 20px;
+	background: #b00000;
+}
+
+.footer-head p {
+	margin: 33px 0 0;
+	color: #fff;
+	font-weight: 600;
+}
+
+.footer-content h4 {
+	margin: 30px 0 0;
+	color: #fff;
+}
+
+.content-services ul {
+	margin: 22px 0 0;
+}
+
+.content-services ul li a {
+	color: #fff;
+  line-height: 40px;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+.content-services ul li a:hover {
+	padding-left: 5px;
+}
+
+.social-media ul {
+	margin: 22px 0 0;
+}
+
+.social-media ul li {
+	display: inline-block;
+}
+
+.social-media ul li a .fa-brands {
+	margin: 0 2px;
+	height: 30px;
+  width: 30px;
+  text-align: center;
+  background: #fff;
+  border-radius: 5px;
+  line-height: 31px;
+  color: #b00000;
+}
+
+.company-address ul li {
+	color: #fff;
+	line-height: 25px;
+}
+
+.company-address .fa-house-chimney {
+	width: 32px;
+}
+
+.company-address .fa-phone {
+	width: 32px;
+}
+
+.copyright p {
+	color: #fff;
+}
+
+
+/* Responsive For Mobile */
+
+
+@media (min-width: 320px) and (max-width: 576px) {
+	
+	header { padding: 0;}
+	.banner-section { padding: 30px 0;}
+	.button-control ul li { margin: 0 16px;}
+	.banner-content h2 { font-size: 45px;margin: 0;}
+	.banner-content p { margin: 16px 0;}
+	.btn-banner-one { margin: 10px 0px 18px 0;padding: 10px 20px;width: 46%;font-size: 14px;}
+	.btn-banner-two { margin: 0 0 20px 0;padding: 10px 20px;width: 46%;font-size: 14px;}
+	.hosting-section { padding: 30px 0;}
+	.hosting-head h2 { text-align: center;}
+	.hosting-head p { margin: 20px 0 20px;text-align: center;}
+	.row-margin { margin-top: 32px;}
+	.service-section { padding: 30px 0 0;}
+	.service-content { margin-bottom: 36px;}
+	.package-section { padding: 20px 0;}
+	.package-head h2 { padding: 0;font-size: 45px;}
+	.package-head p { margin: 18px 0;font-size: 18px;}
+	.input-list ul li { margin: 6px 10px;font-size: 18px;}
+	.package-menu ul li{ margin: 5px 7% 0;font-size: 20px;}
+	.pakcage-items { padding: 32px 32px 0;margin-top: 16px;}
+	.pakcage-items p { margin: 10px 0;}
+	.pakcage-items h2 { font-size: 30px;}
+	.btn-package { margin: 20px 0;}
+	.client-review { padding: 30px 0 0;}
+	.review-head h2 { font-size: 40px;}
+	.review-margin {margin: 20px 0;}
+	.mt-5 { margin-top: 0;}
+	.media-margin { margin-top: 20px;}
+	.review-content { padding: 0px 20px 10px;}
+	.contact-section { padding: 0px 0 30px;}
+	.contact-head h2 { padding: 0;font-size: 36px;}
+	.form-control { width: 80%; }
+	.footer-head img { display: block;margin: 0 auto;}
+	.footer-head p { text-align: center;margin: 26px 0 0;}
+	.footer-content h4 { text-align: center;}
+	.content-services ul { margin: 10px 0 0;}
+	.content-services ul li a { display: block;text-align: center;}
+	.social-media ul { text-align: center;}
+	.company-address ul { text-align: center;}
+	.company-address ul li { line-height: 36px;}
+}
